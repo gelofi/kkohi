@@ -1,0 +1,20 @@
+{
+  "name": "Kko-hi",
+  "version": "1.0.0",
+  "main": "kkohi.coffee",
+  "scripts": {
+    "start": "coffee kkohi.coffee"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Fizx",
+  "license": "ISC",
+  "dependencies": {
+    "coffeescript": "^2.5.1",
+    "discord.js": "^12.2.0",
+    "ascii-table": "^0.0.9",
+    "fs": "^0.0.2",
+    "common-tags": "^1.8.0"
+  }
+}

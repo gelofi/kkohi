@@ -1,0 +1,18 @@
+{
+  "splashes": {
+    "ping": [
+      "Are we there yet?", "Pong!",
+      "wtfhow?", "Do you like Coffee? I do!",
+      "Brazil grows the most coffee in the world.",
+      "Be cautious! You can overdose on Coffee!",
+      "Coffee grounds can beautify your skin.",
+      "Running slow?", "What?", "I GOT PINGED! >:(",
+      "Psst... One cup of black coffee only has one calorie!"
+    ]
+  },
+  
+  "bot": {
+    "token": "NzMzNTU4ODc0MDQ0MzY2ODc4.XxE58A.viUM03A9vyLGgD5nyHKkIvjtPko",
+    "prefix": "kko-"
+  }
+}
