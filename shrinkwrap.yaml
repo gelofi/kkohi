@@ -4,6 +4,7 @@ dependencies:
   common-tags: 1.8.0
   discord.js: 12.2.0
   fs: 0.0.2
+  moment: 2.27.0
 packages:
   /@discordjs/collection/0.1.6:
     dev: false
@@ -108,6 +109,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-JIhqnCasI9yD+SsmkquHBxTSEuZdQX5BuQnS2Vc7puQQQ+8yiP5AY5uWhpdv4YL4VM5c6iliiYWPgJ/nJQLp7w==
+  /moment/2.27.0:
+    dev: false
+    resolution:
+      integrity: sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
   /node-fetch/2.6.0:
     dev: false
     engines:
@@ -149,3 +154,4 @@ specifiers:
   common-tags: ^1.8.0
   discord.js: ^12.2.0
   fs: ^0.0.2
+  moment: ^2.27.0
