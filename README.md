@@ -7,7 +7,7 @@ A Discord bot coded in CoffeeScript 2.0. A Leuxitai twin!
 - A small XP System!
 - Music Integration!
 - Fun commands!
-- Accompanied with JavaScript!
+- Absolutely no JavaScript!
 - Minimalized tools!
 
 ## Support
