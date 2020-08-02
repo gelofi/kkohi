@@ -17,3 +17,4 @@ Join my Discord server, hang out with us, or seek support!
 Click [here](https://discord.gg/6uWa4Ga)
 
 Support is not always given immediately! We sleep too!
+[![Run on Repl.it](https://repl.it/badge/github/Fizuku/Kko-hi)](https://repl.it/github/Fizuku/Kko-hi)
