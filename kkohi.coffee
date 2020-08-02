@@ -1,41 +1,17 @@
-Discord = require 'discord.js'
-bot = new Discord.Client( disableEveryone: true );
+### 
+  Kko-hi // An open-source Discord bot, using CoffeeScript 2.5.1!
+  Equipped with an event and command handler.
+  Preloaded commands too! Uses a HexoDb database.
+  - ♥ Fizx
+###
 
-# Get required tokens
-keys = require './keys';
+Discord = require 'discord.js'; bot = new Discord.Client( disableEveryone: true );
+Hexo = require 'hexo-db'; bot.db = new Hexo.Database(process.env.hexodb) # Database
 
-# Collections
-bot.commands = new Discord.Collection();
-bot.aliases = new Discord.Collection();
+# Command & Event Handler
+bot.commands = new Discord.Collection(); bot.aliases = new Discord.Collection();
+["command", "events"].forEach (handler) -> require("./handlers/#{handler}")(bot)
 
-# Command Handler
-["command"].forEach (handler) ->
-  require("./handlers/#{handler}")(bot)
+bot.login process.env.token # Log-in the bot // Use your own token! Update it in the .env file!
 
-prefix = keys.bot.prefix;
-
-bot.on "ready", ->
-  console.log "#{bot.user.tag} is now online!"
-  bot.user.setActivity("CoffeeScript",  type: "PLAYING" )
-  
-bot.on "message", (message) ->
-  
-  if message.channel.type == "dm" then return
-  if message.author.bot then return;
-  if message.mentions.users.first() then if message.mentions.users.first().id == "#{bot.user.id}" then return message.channel.send "My prefix is `kko-`. You may change it by the `prefix` command!"
-  
-  if !message.content.startsWith prefix  then return;
-  args = message.content.slice(prefix.length).trim().split(/ +/g)
-  cmd = args.shift().toLowerCase();
-
-  if cmd.length == 0 then return;
-
-  # Get the command
-  command = bot.commands.get(cmd);
-  # If none is found, try to find it by alias
-  if !command then command = bot.commands.get(bot.aliases.get(cmd));
-
-  # If a command is finally found, run the command
-  if command then command.run(bot, message, args);
-  
-bot.login keys.bot.token
+# P.S. Never update CoffeeScript to 99.999.99999!

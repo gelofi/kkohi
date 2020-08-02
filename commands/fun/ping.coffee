@@ -1,16 +1,13 @@
-Discord = require("discord.js")
-{ stripIndent } = require("common-tags")
+Discord = require "discord.js"
+splashes = require "../../util/Splashes.json"
 
 module.exports = 
-    name: "ping",
-    aliases: ["pp"],
-    category: "fun",
-    description: "Returns latency ping of Kko-hi.",
+    name: "ping"
+    aliases: ["p"]
+    category: "fun"
+    description: "Returns latency ping of Kko-hi, with Coffee facts!"
     run: (bot, message, args) -> 
     
       m = await message.channel.send("Pinging...");
-
-      keys = require "../../keys.json"
-      ping = keys.splashes.ping
+      ping = splashes.ping
       m.edit(ping[Math.round(Math.random() * (ping.length - 1))] + " -#{m.createdTimestamp - message.createdTimestamp}ms-")
-    
