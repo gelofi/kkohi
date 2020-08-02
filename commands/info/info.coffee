@@ -1,7 +1,6 @@
 Discord = require "discord.js"; moment = require "moment"
 { stripIndent } = require "common-tags"
 
-Util = require '../../util/Util'
 filters = require '../../util/Filters'
 
 verificationLevels = filters.verification
@@ -204,3 +203,7 @@ module.exports =
             return message.channel.send emojiEmbed
           catch err
             message.channel.send "I can't find that emoji! Perhaps I'm not in the server that emoji is from..?"
+            
+      else
+        
+        return message.channel.send "\\*sips coffee\\* Hmm... I can't find any information for that."

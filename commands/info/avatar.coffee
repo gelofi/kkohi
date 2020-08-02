@@ -13,6 +13,5 @@ module.exports =
         .setDescription member.user.avatarURL( format: "png", size: 2048 )
         .setImage member.user.displayAvatarURL( size: 2048 )
         .setColor member.displayHexColor
-        .setFooter "HD Avatars!"
         .setTimestamp()
       message.channel.send avatarembed

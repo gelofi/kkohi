@@ -1,5 +1,3 @@
-
-
 module.exports = 
   event: "ready"
   emitter: "on"
