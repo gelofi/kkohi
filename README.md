@@ -5,11 +5,11 @@ Uses HexoDB 1.5.
 
 ## Features
 
-- A small XP System!
-- Music Integration!
-- Fun commands!
+- Build you own Discord bot in CoffeeScript!
 - Absolutely no JavaScript!
 - Minimalized tools!
+- Built in event and command handler!
+- Be unique! Most people code Discord bots in JavaScript xD
 
 ## Support
 
