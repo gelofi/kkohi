@@ -26,8 +26,8 @@ module.exports = (bot) ->
         if pull.name then bot.commands.set pull.name, pull ; table.addRow(file, '✅');
         else table.addRow(file, "❌  -> missing a help.name, or help.name is not a string."); continue;
             
-      # If there's an aliases key, read the aliases.
-      if pull.aliases and Array.isArray(pull.aliases)  then pull.aliases.forEach((alias) -> bot.aliases.set(alias, pull.name))
+        # If there's an aliases key, read the aliases.
+        if pull.aliases and Array.isArray(pull.aliases)  then pull.aliases.forEach((alias) -> bot.aliases.set(alias, pull.name))
 
     console.log dateTime + " changes saved | Commands Loaded"
     #console.log table.toString();
