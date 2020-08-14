@@ -25,5 +25,19 @@
   "bool": {
     "true": "Yes",
     "false": "No"
+  },
+  "skies": {
+    "Clear": ":sun_with_face: Clear Skies",
+    "Mostly Sunny": ":white_sun_small_cloud: Mostly Sunny",
+    "Mostly Cloudy": ":cloud: Mostly Cloud",
+    "Light Rain": ":white_sun_rain_cloud: Light Rain",
+    "Blowing Dust": ":dash: Blowing Dust",
+    "Sunny": ":sunny: Sunny",
+    "Haze": ":fog: Haze",
+    "Partly Sunny": ":partly_sunny: Partly Sunny",
+    "Fair": ":thumbsup: Fair",
+    "Cloudy": ":white_sun_cloud: Cloudy",
+    "Rain Showers": ":cloud_rain: Rain Showers"
   }
+  
 }

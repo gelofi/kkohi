@@ -1,0 +1,15 @@
+{
+  "untoggled": "this command is not toggled on!",
+  "bots": "bots aren't eligible for this Kko-hi feature!",
+  "me": {
+    "emoji": "I don't have the **Manage Emoji** permission to use this command!",
+    "members": "I don't have the **Manage Members** permission to use this command!",
+    "channels": "I don't have the **Manage Channels** permission to use this command!",
+    "messages": "I don't have the **Manage Messages** permission to use this command!"
+    
+  },
+  "emoji": "you don't have the **Manage Emoji** permission to use this command!",
+  "members": "you don't have the **Manage Members** permission to use this command!",
+  "channels": "you don't have the **Manage Channels** permission to use this command!",
+  "messages": "you don't have the **Manage Messages** permission to use this command!"
+}
