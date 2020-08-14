@@ -20,7 +20,7 @@ const Util = {
   },
   Manage: {
     "error": {
-      "channel": "742343953491165276",
+      "channel": "742343953491165276", // Change this to your Channel ID!
       "id": Date.now()
       },  
     "channels": "MANAGE_CHANNELS",

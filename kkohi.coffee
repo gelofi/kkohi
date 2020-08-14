@@ -18,6 +18,6 @@ bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 ["command", "event"].forEach (handler) -> require("./handlers/#{handler}")(bot);
 
-#bot.login process.env.token or keys.token # Log-in the bot // Use your own token! Update it in the .env file!
+bot.login process.env.token or keys.token # Log-in the bot // Use your own token! Update it in the .env file!
 
 # P.S. Never update CoffeeScript to 99.999.99999!
