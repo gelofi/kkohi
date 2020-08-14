@@ -1,8 +1,9 @@
 Discord = require "discord.js"; moment = require "moment"
 { stripIndent } = require "common-tags"
 
+# Requirements
 filters = require '../../util/Filters'
-
+Util = require "../../util/Util"
 verificationLevels = filters.verification
 regions = filters.regions
 bool = filters.bool
@@ -24,7 +25,8 @@ userstatus =
 module.exports = 
     name: "info"
     aliases: ["information", "i"]
-    category: "information"
+    category: "info"
+    usage: "`info + mention a `user`/`channel`/`role`, or enter `server`, `me` or a custom emoji to collect useful info."
     description: "Displays the information of a certain Discord object."
     run: (bot, message, args) -> 
       
@@ -72,20 +74,20 @@ module.exports =
           .setAuthor member.user.tag + "'s information"
           .setThumbnail target.displayAvatarURL()
           .setColor member.displayHexColor
-          .addField "ID", member.user.id
+          .addField "User ID", member.user.id
           
           .addField "Nickname", member.nickname or "None", true
           .addField "Status", userstatus[member.user.presence.status], true
-          .addField "Member List Role", member.roles.hoist or "None", true
+          .addField "Hoisted Role", member.roles.hoist or "None", true
     
           .addField "Activity", (if member.user.presence.game then "🎮 #{member.user.presence.game.name}" else "No activities"), true
           .addField "Permissions", "[#{member.permissions.bitfield}](https://discordapi.com/permissions.html##{member.permissions.bitfield})", true
           .addField "Color", "#{member.roles.color} #{member.displayHexColor}", true
           
-          .addField "Roles", member.roles.cache.filter((r) => r.id isnt message.guild.id).map((roles) -> "#{roles}").join(" ") or "No Roles", true
+          .addField "All Roles", member.roles.cache.filter((r) => r.id isnt message.guild.id).map((roles) -> "#{roles}").join(" ") or "No Roles", true
           .addField 'Avatar URL', member.user.avatarURL()
-          .addField "Join Date", member.joinedAt
-          .addField "Created Account", member.user.createdAt
+          .addField "Join At", member.joinedAt
+          .addField "Created Account at", member.user.createdAt
           .setTimestamp()
           return message.channel.send userembed
           
@@ -106,10 +108,10 @@ module.exports =
             .addField "Slowmode", (if channel.rateLimitPerUser is 0 then 'Off' else channel.rateLimitPerUser), true
     
             .addField "Members w/ access", channel.members.filter((member) -> not member.user.bot).size, true
-            .addField "Pins", pins.size  or "None", true
+            .addField "Pin Count", pins.size  or "None", true
             .addField "Invites", invites.size, true
           
-            .addField "Last Pin at", if channel.lastPinAt is null then "No pins yet" else channel.lastPinAt
+            .addField "Last Pinned Message at", channel.lastPinAt or "No pins yet"
             .addField "Created at", channel.createdAt
             .setColor "#b88769"
             return message.channel.send channelembed
@@ -126,15 +128,15 @@ module.exports =
           .setColor target.displayHexColor
           .addField "ID", target.user.id
           
-          .addField "Nickname", (if target.nickname != null then target.nickname else "None"), true
+          .addField "Nickname", target.nickname or "None", true
           .addField "Status", userstatus[target.user.presence.status], true
-          .addField "Member List Role", target.roles.hoist, true
+          .addField "Hoisted Role", target.roles.hoist, true
     
           .addField "Activity", (if target.user.presence.game then "🎮 #{target.user.presence.game.name}" else "No activities"), true
           .addField "Permissions", "[#{target.permissions.bitfield}](https://discordapi.com/permissions.html##{target.permissions.bitfield})", true
           .addField "Color", "#{target.roles.color} #{target.displayHexColor}", true
           
-          .addField "Roles", target.roles.cache.filter((r) => r.id isnt message.guild.id).map((roles) -> "#{roles}").join(" ") or "No Roles", true
+          .addField "All Roles", target.roles.cache.filter((r) => r.id isnt message.guild.id).map((roles) -> "#{roles}").join(" ") or "No Roles", true
           .addField 'Avatar URL', target.user.avatarURL()
           .addField "Join Date", target.joinedAt
           .addField "Created Account", target.user.createdAt
@@ -172,17 +174,13 @@ module.exports =
           return message.channel.send roleembed
         
         catch err
-          console.error err
-          error = await message.channel.send "An unknown error has occured.\nIgnore this message, the error has been sent to the developers to fix."
-          error.delete( timeout: 5000 )
+          bot.users.cache.get manage.error.channel .send embed: Util.Handle.error(err)
+          message.channel.send embed: Util.Handle.error(err)
           
       else if args[0].startsWith("<:") and args[0].endsWith(">")
           
           try
-            name = args[0].split(":")[1]
-            raw = args[0].split(":")[2]
-            emojiID = raw.substring(0, raw.length - 1)
-            emoji = bot.emojis.cache.find (e) -> e.id is emojiID
+            emoji = bot.emojis.cache.find (e) -> e.id is Util.Parse.emojiID(args[0])
             
             try
               emojiMaker = await emoji.fetchAuthor()
@@ -199,7 +197,7 @@ module.exports =
             .addField "Server", emoji.guild.name, true
             .addField "Added by", emojiMaker, true
             
-            .addField "Creation Date", emoji.createdAt
+            .addField "Created on", emoji.createdAt
             return message.channel.send emojiEmbed
           catch err
             message.channel.send "I can't find that emoji! Perhaps I'm not in the server that emoji is from..?"

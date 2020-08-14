@@ -3,7 +3,8 @@ Discord = require "discord.js"
 module.exports = 
     name: "avatar"
     aliases: ["pfp", "av"]
-    category: "info"
+    category: "tools"
+    usage: "`avatar [@user]` or `avatar`"
     description: "Fetches the profile photo of a user."
     run: (bot, message, args) -> 
 

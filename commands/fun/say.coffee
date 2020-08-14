@@ -5,6 +5,7 @@ module.exports =
     name: "say"
     aliases: ["msg"]
     category: "fun"
+    usage: "`say [text-here]`"
     description: "Call this command and Kko-hi will repeat what you said."
     run: (bot, message, args) -> 
 

@@ -9,7 +9,7 @@
     "node": "12.x"
   },
   "author": "Fizx",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "coffeescript": "^2.5.1",
     "discord.js": "^12.2.0",
@@ -17,6 +17,11 @@
     "fs": "^0.0.2",
     "common-tags": "^1.8.0",
     "moment": "^2.27.0",
-    "hexo-db": "^1.5.0"
+    "hexo-db": "^1.5.0",
+    "weather-js": "^2.0.0",
+    "ms": "^2.1.2",
+    "simple-youtube-api": "^5.2.1",
+    "musakui": "^1.0.0",
+    "node-superfetch": "^0.1.10"
   }
 }

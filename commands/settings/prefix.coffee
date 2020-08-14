@@ -1,8 +1,10 @@
 Discord = require 'discord.js'
 
 module.exports =
-    name: 'setprefix'
-    aliases: ["sp", "prefix"]
+    name: 'prefix'
+    aliases: ["sp", "setprefix"]
+    category: "settings"
+    usage: "`prefix [new-prefix]`"
     description: "Changes the prefix of the bot"
     run: (bot, message, args) ->
       db = bot.db
@@ -14,7 +16,7 @@ module.exports =
       if args[1] then return message.reply "prefixes with spaces are not allowed!"
       if args[0].length > 3 then return message.channel.send "No prefixes more than 3 characters!"
 
-      if args[0] is 'kko-'
+      if args[0] is 'kko-' or args[0] is "reset"
         db.delete "prefix_#{message.guild.id}"
         return message.channel.send "The prefix has been reset successfully."
       
