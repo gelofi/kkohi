@@ -2,13 +2,15 @@ dependencies:
   ascii-table: 0.0.9
   coffeescript: 2.5.1
   common-tags: 1.8.0
-  discord.js: 12.2.0
+  discord.js: 12.3.1
   fs: 0.0.2
-  hexo-db: 1.5.0
+  hexo-db: 1.5.1
+  mathjs: 7.2.0
   moment: 2.27.0
   ms: 2.1.2
   musakui: 1.0.0
   node-superfetch: 0.1.10
+  novelcovid: 1.2.7
   simple-youtube-api: 5.2.1
   weather-js: 2.0.0
 packages:
@@ -176,6 +178,10 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
+  /complex.js/2.0.11:
+    dev: false
+    resolution:
+      integrity: sha512-6IArJLApNtdg1P1dFtn3dnyzoZBEF0MwMnrfF1exSBRpZYoy4yieMkpZhQDC0uwctw48vii0CFVyHfpgZ/DfGw==
   /component-emitter/1.3.0:
     dev: false
     resolution:
@@ -212,6 +218,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  /decimal.js/10.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-vDPw+rDgn3bZe1+F/pyEwb1oMG2XTlRVgAa6B4KccTEpYgF8w6eQllVbQcfIJnZyvzFtFpxnpGtx8dd7DJp/Rw==
   /decompress-response/3.3.0:
     dependencies:
       mimic-response: 1.0.1
@@ -244,7 +254,7 @@ packages:
       node: '>=0.3.1'
     resolution:
       integrity: sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
-  /discord.js/12.2.0:
+  /discord.js/12.3.1:
     dependencies:
       '@discordjs/collection': 0.1.6
       '@discordjs/form-data': 3.0.1
@@ -257,15 +267,8 @@ packages:
     dev: false
     engines:
       node: '>=12.0.0'
-    peerDependencies:
-      bufferutil: ^4.0.1
-      erlpack: discordapp/erlpack
-      libsodium-wrappers: ^0.7.6
-      sodium: ^3.0.2
-      utf-8-validate: ^5.0.2
-      zlib-sync: ^0.1.6
     resolution:
-      integrity: sha512-Ueb/0SOsxXyqwvwFYFe0msMrGqH1OMqpp2Dpbplnlr4MzcRrFWwsBM9gKNZXPVBHWUKiQkwU8AihXBXIvTTSvg==
+      integrity: sha512-mSFyV/mbvzH12UXdS4zadmeUf8IMQOo/YdunubG1wWt1xjWvtaJz/s9CGsFD2B5pTw1W/LXxxUbrQjIZ/xlUdw==
   /duplexer3/0.1.4:
     dev: false
     resolution:
@@ -283,6 +286,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==
+  /escape-latex/1.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-nV5aVWW1K0wEiUIEdZ4erkGGH8mDxGyxSeqPzRNtWP7ataw+/olFObw7hujFWlVjNsaDFw5VZ5NzVSIqRgfTiw==
   /escape-string-regexp/1.0.5:
     dev: false
     engines:
@@ -361,6 +368,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-V8gLm+41I/8kguQ4/o1D3RIHRmhYFG4pnNyonvua+40rqcEmT4+V71yaZ3B457xbbgCsCfjSPi65u/W6vK1U5Q==
+  /fraction.js/4.0.12:
+    dev: false
+    resolution:
+      integrity: sha512-8Z1K0VTG4hzYY7kA/1sj4/r1/RWLBD3xwReT/RCrUCbzPszjNQCCsy3ktkU/eaEqX3MYa4pY37a52eiBlPMlhA==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -457,12 +468,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
-  /hexo-db/1.5.0:
+  /hexo-db/1.5.1:
     dependencies:
       superagent: 5.3.1
     dev: false
     resolution:
-      integrity: sha512-re1vI44HZtJxHR5H9O8gQjXtwRqzLA6WqQFHOvyigtWMSudbGgidScYXWtaEQ6RM+Z8VodtMw6IYdhqOHJt6bg==
+      integrity: sha512-7wGb7jJI2WZBYIyJouJY+/OBwzMnR9QrFo9Ba1yhezMJHOmw7xTFULPwjBFC++2RCZgGdfmoeWgjwxRDOD+65Q==
   /http-cache-semantics/4.1.0:
     dev: false
     resolution:
@@ -501,6 +512,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
+  /javascript-natural-sort/0.7.1:
+    dev: false
+    resolution:
+      integrity: sha1-+eIwPUUH9tdDVac2ZNFED7Wg71k=
   /jsbn/0.1.1:
     dev: false
     resolution:
@@ -550,6 +565,22 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==
+  /mathjs/7.2.0:
+    dependencies:
+      complex.js: 2.0.11
+      decimal.js: 10.2.0
+      escape-latex: 1.2.0
+      fraction.js: 4.0.12
+      javascript-natural-sort: 0.7.1
+      seed-random: 2.2.0
+      tiny-emitter: 2.1.0
+      typed-function: 2.0.0
+    dev: false
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-9UBMWBB94eyrxX8gskBzkVJZBEig2BUL8CBglQoRW4X/ljdW6hBVm8sT6Jp1MhyEp+2flKJo81qwml6twScxFw==
   /methods/1.1.2:
     dev: false
     engines:
@@ -661,6 +692,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
+  /novelcovid/1.2.7:
+    dependencies:
+      node-fetch: 2.6.0
+    dev: false
+    resolution:
+      integrity: sha512-Kfu4pzlBNpLSU+W4tC5oO5fEYB8k//TAK0FZUL/d/YvaEziMgfTlJkgipV5Nr60CwBZbixzyJp/H+gvx1BAyZg==
   /oauth-sign/0.9.0:
     dev: false
     resolution:
@@ -791,6 +828,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
+  /seed-random/2.2.0:
+    dev: false
+    resolution:
+      integrity: sha1-KpsZ4lCoFwmSMaW5mk2vgLf77VQ=
   /semver/7.3.2:
     dev: false
     engines:
@@ -858,6 +899,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-zjaXglF5nnWpsq470jSv6P9DwPvgLkuapYmfDm3JWOm0vkNTVF2tI4UrN2r6jH1qM/uc/WtxYY1hYoA2dOKj5w==
+  /tiny-emitter/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
   /to-readable-stream/1.0.0:
     dev: false
     engines:
@@ -893,6 +938,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
+  /typed-function/2.0.0:
+    dev: false
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-Hhy1Iwo/e4AtLZNK10ewVVcP2UEs408DS35ubP825w/YgSBK1KVLwALvvIG4yX75QJrxjCpcWkzkVRB0BwwYlA==
   /uri-js/4.2.2:
     dependencies:
       punycode: 2.1.1
@@ -968,12 +1019,14 @@ specifiers:
   ascii-table: ^0.0.9
   coffeescript: ^2.5.1
   common-tags: ^1.8.0
-  discord.js: ^12.2.0
+  discord.js: ^12.3.1
   fs: ^0.0.2
-  hexo-db: ^1.5.0
+  hexo-db: ^1.5.1
+  mathjs: ^7.2.0
   moment: ^2.27.0
   ms: ^2.1.2
   musakui: ^1.0.0
   node-superfetch: ^0.1.10
+  novelcovid: ^1.2.7
   simple-youtube-api: ^5.2.1
   weather-js: ^2.0.0
