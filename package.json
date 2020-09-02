@@ -17,7 +17,7 @@
     "fs": "^0.0.2",
     "common-tags": "^1.8.0",
     "moment": "^2.27.0",
-    "hexo-db": "^1.5.1",
+    "hexo-db": "^2.0.1",
     "weather-js": "^2.0.0",
     "ms": "^2.1.2",
     "simple-youtube-api": "^5.2.1",

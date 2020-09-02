@@ -4,7 +4,7 @@ dependencies:
   common-tags: 1.8.0
   discord.js: 12.3.1
   fs: 0.0.2
-  hexo-db: 1.5.1
+  hexo-db: 2.0.1
   mathjs: 7.2.0
   moment: 2.27.0
   ms: 2.1.2
@@ -468,12 +468,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
-  /hexo-db/1.5.1:
+  /hexo-db/2.0.1:
     dependencies:
+      lodash: 4.17.20
       superagent: 5.3.1
     dev: false
     resolution:
-      integrity: sha512-7wGb7jJI2WZBYIyJouJY+/OBwzMnR9QrFo9Ba1yhezMJHOmw7xTFULPwjBFC++2RCZgGdfmoeWgjwxRDOD+65Q==
+      integrity: sha512-YQR9JzlH5bprTTrFbTU0LLQsLgs5cE1GzNlpE8LDFRwqVHDl5jO++f/GFCEabtMMU2SRMugZyGaK39/zkOnLAg==
   /http-cache-semantics/4.1.0:
     dev: false
     resolution:
@@ -553,6 +554,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==
+  /lodash/4.17.20:
+    dev: false
+    resolution:
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /lowercase-keys/1.0.1:
     dev: false
     engines:
@@ -1021,7 +1026,7 @@ specifiers:
   common-tags: ^1.8.0
   discord.js: ^12.3.1
   fs: ^0.0.2
-  hexo-db: ^1.5.1
+  hexo-db: ^2.0.1
   mathjs: ^7.2.0
   moment: ^2.27.0
   ms: ^2.1.2
