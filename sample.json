@@ -1,0 +1,368 @@
+{
+  "name": "ambition",
+  "vocabDotComUrl": "http://app.vocabulary.com/app/1.0/dictionary/search?word=ambition&tz=America%2FNew_York&tzo=-300&appver=1.0.0",
+  "vocabDotComSentenceURL": "http://corpus.vocabulary.com/api/1.0/examples.json?query=ambition&maxResults=24&startOffset=0&filter=3&tz=America%2FNew_York&tzo=-300&appver=1.0.0",
+  "shortDescription":
+    "Ambition is a strong desire to achieve. It's what " +
+    "Macbeth had too much of, and what slackers have too " +
+    "little of.",
+  "longDescription":
+    "If a person has ambition, the goal is usually wealth, power, or fame. " +
+    "This Middle English word is derived from Latin ambitiō, from ambīre \"to " +
+    "go around or about.\" In ancient Rome, candidates for office would go " +
+    "around to gain votes, to further their goal of being powerful or " +
+    "famous.",
+  "definitions": [
+    { "partOfSpeech": "n", "definition": "a strong drive for success" },
+    { "partOfSpeech": "n", "definition": "a cherished desire" },
+    { "partOfSpeech": "v", "definition": "have as one's ambition" }
+  ],
+  "audioUrl": "http://s3.amazonaws.com/audio.vocabulary.com/1.0/us/A/SY30LOH0Q2I4.mp3",
+  "family": [
+    {
+      "word": "ambition",
+      "hw": true,
+      "freq": 20.132815236884948,
+      "ffreq": 37.119930972570586,
+      "size": 10,
+      "type": 0
+    },
+    {
+      "word": "ambitioned",
+      "parent": "ambition",
+      "freq": 0.007445442606388893,
+      "ffreq": 0.007445442606388893,
+      "size": 1,
+      "type": 1
+    },
+    {
+      "word": "ambitionless",
+      "hw": true,
+      "parent": "ambition",
+      "freq": 0.011845022328345965,
+      "ffreq": 0.011845022328345965,
+      "size": 1,
+      "type": 2
+    },
+    {
+      "word": "ambitions",
+      "parent": "ambition",
+      "freq": 4.918053270729245,
+      "ffreq": 4.918053270729245,
+      "size": 1,
+      "type": 1
+    },
+    {
+      "word": "ambitious",
+      "hw": true,
+      "parent": "ambition",
+      "freq": 11.576647965306584,
+      "ffreq": 12.049772000021662,
+      "size": 6,
+      "type": 3
+    },
+    {
+      "word": "ambitiously",
+      "hw": true,
+      "parent": "ambitious",
+      "freq": 0.17192203836570716,
+      "ffreq": 0.17192203836570716,
+      "size": 1,
+      "type": 2
+    },
+    {
+      "word": "ambitiousness",
+      "hw": true,
+      "parent": "ambitious",
+      "freq": 0.010829734700202027,
+      "ffreq": 0.010829734700202027,
+      "size": 1,
+      "type": 2
+    },
+    {
+      "word": "overambitious",
+      "hw": true,
+      "parent": "ambitious",
+      "freq": 0.029104912006792945,
+      "ffreq": 0.029104912006792945,
+      "size": 1,
+      "type": 4
+    },
+    {
+      "word": "unambitious",
+      "hw": true,
+      "parent": "ambitious",
+      "freq": 0.25585248229227286,
+      "ffreq": 0.26126734964237386,
+      "size": 2,
+      "type": 2
+    },
+    {
+      "word": "unambitiously",
+      "hw": true,
+      "parent": "unambitious",
+      "freq": 0.005414867350101014,
+      "ffreq": 0.005414867350101014,
+      "size": 1,
+      "type": 2
+    }
+  ],
+  "sentences": [
+    {
+      "volume": [Object],
+      "sentence":
+        "Even U.S. officials who back the Iran deal as a " +
+        "crucial step in curbing its nuclear ambitions " +
+        "view the nation as a severely destabilizing " +
+        "force.",
+      "corpusId": "WPO",
+      "volumeOffset": 9,
+      "offsets": [Array],
+      "volumeId": 5688752
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "He said that strong alliances were key to deterring Moscow, along " +
+        "with the “growing ambitions of China to rival the United States.”",
+      "corpusId": "NYT",
+      "volumeOffset": 36,
+      "offsets": [Array],
+      "volumeId": 5687343
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Its ambition, its rejection of austerity orthodoxy and its " +
+        "commitment to reducing economic inequality are all " +
+        "admirable.",
+      "corpusId": "WPO",
+      "volumeOffset": 1,
+      "offsets": [Array],
+      "volumeId": 5687243
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "That decision will affect the scope and " +
+        "ambition of the trial, which will be Trump’s " +
+        "second.",
+      "corpusId": "WPO",
+      "volumeOffset": 13,
+      "offsets": [Array],
+      "volumeId": 5687212
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "It also exposes how disruptive another of their " +
+        "ambitions would be - unification with Taiwan.",
+      "corpusId": "BBC",
+      "volumeOffset": 43,
+      "offsets": [Array],
+      "volumeId": 5686984
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Viva also furthers Microsoft’s ambition to put " +
+        "Teams at the center of its strategy for work and " +
+        "to act as a hub into everything the company does.",
+      "corpusId": "VER",
+      "volumeOffset": 35,
+      "offsets": [Array],
+      "volumeId": 5686130
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Americans were not always so ignorant of the " +
+        "imperial nature of their country's ambitions.",
+      "corpusId": "SLN",
+      "volumeOffset": 6,
+      "offsets": [Array],
+      "volumeId": 5685965
+    },
+    {
+      "volume": [Object],
+      "sentence": "It was a particularly notable moment for Amazon’s gaming ambitions.",
+      "corpusId": "VER",
+      "volumeOffset": 95,
+      "offsets": [Array],
+      "volumeId": 5684890
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Amazon shows no sign of pulling back from its " +
+        "ambition to push into more corners of the " +
+        "economy.",
+      "corpusId": "NYT",
+      "volumeOffset": 25,
+      "offsets": [Array],
+      "volumeId": 5684004
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "There was no uncertainty about the toxic " +
+        "ambitions of the men and women who led the " +
+        "mob.",
+      "corpusId": "WPO",
+      "volumeOffset": 23,
+      "offsets": [Array],
+      "volumeId": 5683909
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Her heart is a thumping muscle of " +
+        "unsatisfied longings and unrealized " +
+        "ambitions.",
+      "corpusId": "WPO",
+      "volumeOffset": 12,
+      "offsets": [Array],
+      "volumeId": 5683906
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "For some Ohio Democrats the cautionary tale is 2018, when a group of " +
+        "female gubernatorial candidates all ceded their ambitions to former " +
+        "Obama administration consumer chief Richard Cordray, who lost the " +
+        "race.",
+      "corpusId": "STM",
+      "volumeOffset": 35,
+      "offsets": [Array],
+      "volumeId": 5683368
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "“The ambition is fantastic,” says ecologist Joshua " +
+        "Tewksbury, interim executive director of the nonprofit " +
+        "Future Earth.",
+      "corpusId": "SCM",
+      "volumeOffset": 2,
+      "offsets": [Array],
+      "volumeId": 5683245
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "\"We recognise that carbon capture storage is critical to achieving " +
+        "the ambitions of the Paris Climate Agreement and we're beginning to " +
+        "see broader recognition of the importance of that,\" Mr Woods said.",
+      "corpusId": "BBC",
+      "volumeOffset": 21,
+      "offsets": [Array],
+      "volumeId": 5682781
+    },
+    {
+      "volume": [Object],
+      "sentence": "Q. Re: Secret ambitions: Wow, what an accomplishment to write a novel!",
+      "corpusId": "SLT",
+      "volumeOffset": 166,
+      "offsets": [Array],
+      "volumeId": 5682295
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Last year probably all started with big ambitions for our " +
+        "wardrobes and what new pieces we were going to add to it.",
+      "corpusId": "BBC",
+      "volumeOffset": 1,
+      "offsets": [Array],
+      "volumeId": 5681958
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "I thought about this last week when my friend Maran " +
+        "Nelson and I started a room to talk with Newcomer about " +
+        "his recent piece on A16z and its independent media " +
+        "ambitions.",
+      "corpusId": "VER",
+      "volumeOffset": 50,
+      "offsets": [Array],
+      "volumeId": 5681885
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "This time around, without an obvious hero to back, U.S. " +
+        "ambitions in the country are likely to be a lot more " +
+        "modest.",
+      "corpusId": "SLT",
+      "volumeOffset": 38,
+      "offsets": [Array],
+      "volumeId": 5681712
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "The other costs in Biden's plan are driven by " +
+        "economic needs, not political ambitions, advisers " +
+        "say.",
+      "corpusId": "SLN",
+      "volumeOffset": 43,
+      "offsets": [Array],
+      "volumeId": 5681465
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "Cowell left school at 16 and would later join the RAF, but her " +
+        "ambition of becoming a fighter pilot was initially dashed by " +
+        "airsickness.",
+      "corpusId": "BBC",
+      "volumeOffset": 55,
+      "offsets": [Array],
+      "volumeId": 5681033
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "“In our later years, our ambition or goal is to help keep " +
+        "the traditions going and not lose our culture,” she said.",
+      "corpusId": "WTM",
+      "volumeOffset": 59,
+      "offsets": [Array],
+      "volumeId": 5680323
+    },
+    {
+      "volume": [Object],
+      "sentence": "But we need to show ambition for the future.",
+      "corpusId": "BBC",
+      "volumeOffset": 9,
+      "offsets": [Array],
+      "volumeId": 5680208
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "M.B.S.’s bizarre promotional film is not " +
+        "just a reflection of his royal ambitions.",
+      "corpusId": "NYT",
+      "volumeOffset": 40,
+      "offsets": [Array],
+      "volumeId": 5680062
+    },
+    {
+      "volume": [Object],
+      "sentence":
+        "But there is still a programmatic ambition that unites " +
+        "activists trying to play ideological commissar at " +
+        "universities with activists trying to defund the police " +
+        "with activists trying to get Washington and Lincoln " +
+        "canceled.",
+      "corpusId": "NYT",
+      "volumeOffset": 21,
+      "offsets": [Array],
+      "volumeId": 5680051
+    }
+  ],
+  "images": [],
+  "mnemonic": ""
+}

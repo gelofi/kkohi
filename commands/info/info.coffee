@@ -26,7 +26,7 @@ module.exports =
     name: "info"
     aliases: ["information", "i"]
     category: "info"
-    usage: "`info + mention a `user`/`channel`/`role`, or enter `server`, `me` or a custom emoji to collect useful info."
+    usage: "info + mention a `user`/`channel`/`role`, or enter `server`, `me` or a custom emoji to collect useful info."
     description: "Displays the information of a certain Discord object."
     run: (bot, message, args) -> 
       

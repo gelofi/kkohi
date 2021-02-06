@@ -26,17 +26,19 @@ Or our [website](https://kko-hi.herokuapp.com) to learn more.
       bot.commands.forEach (command) ->
         commands.push("#{command.name} #{command.category}")
       # Categories
-      bot = []; info = []; settings = [];
+      bot = []; info = []; settings = []; images = [];
       fun = []; search = []; tools = [];
       commands.forEach (cmd) ->
         if cmd.includes "bot" then bot.push cmd.split(" ")[0]
         if cmd.includes "fun" then fun.push cmd.split(" ")[0]
+        if cmd.includes "images" then images.push cmd.split(" ")[0]
         if cmd.includes "info" then info.push cmd.split(" ")[0]
         if cmd.includes "tools" then tools.push cmd.split(" ")[0]
         if cmd.includes "search" then search.push cmd.split(" ")[0]
         if cmd.includes "settings" then settings.push cmd.split(" ")[0]
           
       allhelp.addField ":video_game: Fun & Random", "`#{fun.join("` `")}`"
+      .addField ":frame_photo: Images", "`#{images.join("` `")}`"
       .addField ":card_box: Information", "`#{info.join("` `")}`"
       .addField ":tools: Utilities & Tools", "`#{tools.join("` `")}`"
       .addField ":mag_right: Search things", "`#{search.join("` `")}`"

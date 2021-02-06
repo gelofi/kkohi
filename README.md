@@ -36,9 +36,7 @@ That's it! You now have your own Kko-hi!
 
 ## Support
 
-Join my Discord server, hang out with us, or seek support!
-Click [here](https://discord.gg/6uWa4Ga)
-
+Contact me on Discord to join our server! (Fizx#5360)
 Support is not always given immediately! We sleep too!
 
 [![Run on Repl.it](https://repl.it/badge/github/Fizuku/Kko-hi)](https://repl.it/github/Fizuku/Kko-hi)<br>

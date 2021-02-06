@@ -23,4 +23,3 @@ module.exports =
     """
     .setColor "#db9a7b"
     channel.send welcome
-    channel.send "https://github.com/Fizuku/Kko-hi"
