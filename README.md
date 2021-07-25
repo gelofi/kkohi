@@ -1,6 +1,6 @@
 # Kko-hi
 
-A open-source **Discord bot** coded in **CoffeeScript** 2.5.1. Uses HexoDB 1.5.
+A open-source **Discord bot** coded in **CoffeeScript** 2.5.1. Uses HexoDB 1.5 (GitHub version)
 
 ### Features
 
@@ -36,8 +36,9 @@ That's it! You now have your own Kko-hi!
 
 ## Support
 
-Contact me on Discord to join our server! (Fizx#5360)
-Support is not always given immediately! We sleep too!
+Join our Discord server, [Eryphub](https://discord.gg/fVCpshnrAW)
+
+P.S. - The GitHub version is different from the Repl.it version. This one uses HexoDB as its database, but the Repl.it version uses ReplDB.
 
 [![Run on Repl.it](https://repl.it/badge/github/Eryphe/Kko-hi)](https://replit.com/@Eryphe/Kko-hi)<br>
 [Run on Glitch](https://glitch.com/~kko-hi-bot)
