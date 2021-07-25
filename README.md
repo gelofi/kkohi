@@ -39,5 +39,5 @@ That's it! You now have your own Kko-hi!
 Contact me on Discord to join our server! (Fizx#5360)
 Support is not always given immediately! We sleep too!
 
-[![Run on Repl.it](https://repl.it/badge/github/Fizuku/Kko-hi)](https://repl.it/github/Fizuku/Kko-hi)<br>
+[![Run on Repl.it](https://repl.it/badge/github/Eryphe/Kko-hi)](https://replit.com/@Eryphe/Kko-hi)<br>
 [Run on Glitch](https://glitch.com/~kko-hi-bot)
