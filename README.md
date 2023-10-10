@@ -26,7 +26,7 @@ Or the keys.json file.
   "hexodb": ""
 }
 ```
-EVEYTHING BELOW HERE IS NOT WORKING AS OF 2021!<br>
+HexoDB IS NOT WORKING AS OF 2021!<br>
 You may get your own HexoDB database [here](https://hexodb.glitch.me).<br>
 It's an OK alternative for a database if you don't want to learn MongoDB yet xD.<br>
 Unlike a local SQLite Database, HexoDB works on Heroku/Glitch/Repl.<br>
