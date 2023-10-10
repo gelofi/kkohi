@@ -26,8 +26,9 @@ Or the keys.json file.
   "hexodb": ""
 }
 ```
+EVEYTHING BELOW HERE IS NOT WORKING AS OF 2021!<br>
 You may get your own HexoDB database [here](https://hexodb.glitch.me).<br>
-It's an OK alternative for a database if you don't want to learn MongoDB yet.<br>
+It's an OK alternative for a database if you don't want to learn MongoDB yet xD.<br>
 Unlike a local SQLite Database, HexoDB works on Heroku/Glitch/Repl.<br>
 Your HexoShard should be hosted on [Repl.it](https://repl.it)
 It's free, and open-source too!
@@ -35,8 +36,7 @@ It's free, and open-source too!
 That's it! You now have your own Kko-hi!
 
 ## Support
-
-Join our Discord server, [Eryphub](https://discord.gg/fVCpshnrAW)
+Kko-hi is now archived.<br>
 
 P.S. - The GitHub version is different from the Repl.it version. This one uses HexoDB as its database, but the Repl.it version uses ReplDB.
 
